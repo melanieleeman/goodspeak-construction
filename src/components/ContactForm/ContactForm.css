@@ -1,0 +1,11 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    border-radius: 8px;
+    border: 1px solid var(--secondary-color);
+    font-family: CocogooseLight, sans-serif;
+    font-size: 12px;
+}

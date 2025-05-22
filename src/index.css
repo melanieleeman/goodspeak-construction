@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'CocogooseLight';
+    src: url('assets/fonts/cocogoose_pro/Cocogoose-Pro-Light.otf') format('opentype'),
+    url('assets/fonts/cocogoose_pro/Cocogoose-Pro-Light.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CocogooseSemilight';
+    src: url('assets/fonts/cocogoose_pro/Cocogoose-Pro-Semilight.otf') format('opentype'),
+    url('assets/fonts/cocogoose_pro/Cocogoose-Pro-Semilight.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CocogooseRegular';
+    src: url('assets/fonts/cocogoose_pro/Cocogoose-Pro-Regular.otf') format('opentype'),
+    url('assets/fonts/cocogoose_pro/Cocogoose-Pro-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+:root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --primary-color: #1D9EBC;
+    --secondary-color: #363A3A;
+    --font-primary: 'CocogooseLight', sans-serif;
+    --font-primary-bold: 'CocogooseSemiLight', sans-serif;
+}
+
+/* Styles pour l'image de fond (appliqués au body) */
+body {
+    margin: 0;
+    min-height: 100vh;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    font-family: CocogooseLight, sans-serif;
+    letter-spacing: -1px;
+    background-image: url('/construction_illustration.png');
+    background-repeat: no-repeat;
+    background-position: right 0 bottom 10vh;
+    background-size: 70% auto;
+    background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'CocogooseSemilight', sans-serif;
+}
+
+/* Styles pour le pied de page (à créer en HTML) */
+.footer-band {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-top: auto;
+    height: 10vh;
+    background-color: #36363A;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        background-size: 90% auto;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-height: 500px) {
+    body {
+      background-position: right 0 bottom 5vh;
+    }
+
+  .footer-band {
+    height: 5vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background-size: 100%;
+  }
+}
