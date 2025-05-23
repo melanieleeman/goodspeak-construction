@@ -8,6 +8,7 @@ function App() {
 
   return (
       <div className="app-container">
+        <div className="background-layer" />
         <img className="logo" src={logotype} alt="Logo Goodspeak VR"/>
         <div className="coming-text">
           <h1>La révolution de la prise de parole est en marche.</h1>
