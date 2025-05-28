@@ -8,20 +8,21 @@ function App() {
 
   return (
       <div className="app-container">
-        <div className="background-layer" />
+        <div className="background-layer"/>
         <img className="logo" src={logotype} alt="Logo Goodspeak VR"/>
         <div className="coming-text">
           <h1>La révolution de la prise de parole est en marche.</h1>
           <div className="presentation-text">
             <h3>GoodSpeakVR arrive.</h3>
-            Une plateforme unique qui conjugue IA, réalité virtuelle <br/> et feedbacks ultra-précis pour transformer vos prises de parole. <br/>
-            <div className="more-than-text">
-              <span className="bold">Plus qu’une formation</span> : une immersion. <br/>
-              <span className="bold">Plus qu’un entraînement</span> : un simulateur d’élite.
-            </div>
+            <p>GoodSpeakVR est une application immersive de coaching en prise de parole en public, qui conjugue réalité virtuelle, intelligence artificielle et technologie digitale pour accompagner les professionnels dans le développement de leur leadership oral.</p>
+            <p>Pensée comme un véritable simulateur d’entraînement, la plateforme permet de s’exercer dans des environnements variés (réunion, négociation, interview de crise, conférence…) en bénéficiant de feedbacks personnalisés et précis sur la voix, la posture, le regard, la gestuelle et la structure du discours. </p>
+            <p>GoodSpeakVR est autonome, progressive. Elle propose un parcours encadré par GOOS, un coach virtuel exigeant mais bienveillant, qui guide l’utilisateur avant, pendant et après chaque séance.</p>
+            <p>GoodSpeakVR permet de répéter, ajuster et progresser sans jugement, avec un accompagnement structuré, ludique et professionnel, directement accessible en VR, sur ordinateur ou smartphone.</p>
+
+
           </div>
           <div className="contact-us">
-            <p>Besoin de plus d’informations avant le lancement ?</p>
+            <p className="bold">Besoin de plus d’informations avant le lancement ?</p>
             <button className={"primary"} onClick={() => setIsOpen(true)}>Contactez-nous</button>
           </div>
         </div>
