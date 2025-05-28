@@ -2,6 +2,8 @@ import './App.css'
 import logotype from './assets/logo_title_grey.png'
 import {ContactForm} from "./components/ContactForm/ContactForm.jsx";
 import React, {useState} from "react";
+import PhoneIcon from "./assets/phone-call_5070407.svg?react";
+import MailIcon from "./assets/envelope-plus_5070398.svg?react";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -35,8 +37,22 @@ function App() {
               <div className="modal">
                 <button className="close" onClick={() => setIsOpen(false)}>×</button>
                 <h2>Contactez GoodSpeakVR</h2>
-                <ContactForm/>
-                <p className="phone">Ou appelez-nous au <a href="tel:+33612791312">06 12 79 13 12</a></p>
+                <div className="modal-body">
+                  <div className="qr-block">
+                    <img src="/qr.png" alt="QR code contact"/>
+                  </div>
+                  <div className="contact-infos-block">
+                    <p className="bold">Thierry Marcellin</p>
+                    <div className="contact-info">
+                      <PhoneIcon/>
+                      <a href="tel:+33612791312">06 12 79 13 12</a>
+                    </div>
+                    <div className="contact-info">
+                      <MailIcon />
+                      <a href="mailto:tm@goodspeakvr.fr">tm@goodspeakvr.fr</a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
         )}
